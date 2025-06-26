@@ -1,0 +1,21 @@
+.boards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px 60px;
+  margin-top: 250px;
+  margin-left: 20px;
+}
+
+.board-card {
+  border-radius: 16px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.board-card:hover {
+  transform: scale(1.03);
+}
