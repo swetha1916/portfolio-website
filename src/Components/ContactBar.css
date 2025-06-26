@@ -1,0 +1,27 @@
+.contact-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full height */
+  width: 50px; /* Thin */
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  z-index: 999;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-bar a {
+  color: #333;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.contact-bar a:hover {
+  color: #ec8395; /* baby pink on hover */
+}
