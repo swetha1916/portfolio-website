@@ -3,44 +3,40 @@ import './Boards.css';
 
 const boards = [
   { title: 'About Me',
+    pins: '39829',
     images: [ 'https://unsplash.it/400/400?image=1025',
               'https://unsplash.it/200/200?image=1005',
               'https://unsplash.it/200/200?image=1031'
             ]
   },
   { title: 'Projects',
+    pins: '12',
     images: [ 'https://unsplash.it/400/400?image=1025',
               'https://unsplash.it/200/200?image=1005',
               'https://unsplash.it/200/200?image=1031'
             ]
   },
   { title: 'Contact',
+    pins: '5',
     images: [ 'https://unsplash.it/400/400?image=1025',
               'https://unsplash.it/200/200?image=1005',
               'https://unsplash.it/200/200?image=1031'
             ]
   },
   { title: 'Hobbies',
+    pins: '1092',
     images: [ 'https://unsplash.it/400/400?image=1025',
               'https://unsplash.it/200/200?image=1005',
               'https://unsplash.it/200/200?image=1031'
             ]
   },
-  { title: 'Contact',
-    images: [ 'https://unsplash.it/400/400?image=1025',
-              'https://unsplash.it/200/200?image=1005',
-              'https://unsplash.it/200/200?image=1031'
-            ]
-  },
-  { title: 'Hobbies',
+  { title: 'Education',
+    pins: '20',
     images: [ 'https://unsplash.it/400/400?image=1025',
               'https://unsplash.it/200/200?image=1005',
               'https://unsplash.it/200/200?image=1031'
             ]
   }
-  /* ,
-  { title: 'Education' }
-   */
 ];
 
 const Boards = () => {
@@ -60,6 +56,7 @@ const Boards = () => {
             </div>
           </div>
           <h4 className="board-title">{board.title}</h4>
+          <p className="pin-text">{board.pins} pins</p>
         </div>
       ))}
     </div>

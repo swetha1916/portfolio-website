@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 260px);
   margin-left: 70px;
-  gap: 10px;
+  gap: 20px;
   padding: 20px;
   justify-content: start;
 }
@@ -32,8 +32,15 @@
   width: 280px; 
   text-align: center;
   margin-top: 10px;
-  font-size: 1.5rem;
-  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.pin-text {
+  width: 280px; 
+  text-align: center;
+  margin-top: 0px;
+  font-size: 13px;
 }
 
 .board-preview-layout {

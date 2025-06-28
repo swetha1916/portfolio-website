@@ -14,9 +14,6 @@ const ContactBar = () => {
       <a href="mailto:yourgmail@gmail.com" title="Gmail">
         <i className="fas fa-envelope"></i>
       </a>
-      <a href="mailto:you@outlook.com" title="Outlook">
-        <i className="fas fa-paper-plane"></i>
-      </a>
     </div>
   );
 };
