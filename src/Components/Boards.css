@@ -1,12 +1,11 @@
 
 .boards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, 260px);
   margin-left: 70px;
-  margin-right: auto;
   gap: 10px;
   padding: 20px;
+  justify-content: start;
 }
 
 .board-wrapper {
@@ -16,8 +15,8 @@
 
 .board-card {
   border-radius: 16px;
-  width: 280px;
-  height: 180px;
+  width: 260px;
+  height: 160px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.2s ease;
