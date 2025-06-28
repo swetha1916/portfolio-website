@@ -2,7 +2,7 @@
   position: relative;
   top: 0;
   left: 70px; /* leaving space for contact bar for all app components*/
-  width: calc(100% - 50px);
+  width: calc(100% - 70px);
   padding: 15px 70px;
   z-index: 1000;
 }
@@ -29,4 +29,8 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   width: calc(100% - 80px); 
   max-width: 1000px;
+}
+
+body {
+  overflow-x: hidden;  /* to avoid the horizontal scroll bar */
 }
