@@ -6,17 +6,18 @@
 
 .board-title {
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   text-align: center;
-  text-decoration: bold;
+  font-family: 'Dancing Script', cursive;
 }
 
 .boards-container {
   display: grid;
-  grid-template-columns: repeat(4, 240px);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: calc(4 * 240px + 3 * 20px);
+  margin: auto;
   gap: 20px;
   padding: 20px 60px;
-  margin-top: 250px;
   margin-left: 20px;
 }
 

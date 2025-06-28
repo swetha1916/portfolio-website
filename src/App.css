@@ -1,5 +1,5 @@
 .app-header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 70px; /* leaving space for contact bar for all app components*/
   width: calc(100% - 50px);
