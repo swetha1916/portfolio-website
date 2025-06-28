@@ -66,6 +66,7 @@
   object-fit: cover;
   border: 1px solid white; 
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .right-preview img {
