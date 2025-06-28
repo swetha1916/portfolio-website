@@ -1,7 +1,7 @@
 .app-header {
   position: relative;
   top: 0;
-  left: 70px; /* leaving space for contact bar for all app components*/
+  left: 30px; /* leaving space for contact bar for all app components*/
   width: calc(100% - 70px);
   padding: 15px 70px;
   z-index: 1000;
@@ -10,14 +10,7 @@
 .app-header h1 {
   margin-top: 50px;
   font-size: 2.5rem;
-}
-
-.subtitle {
-  margin-top: 40px;
-  color: #666;
-  letter-spacing: 0.03em;
-  text-decoration: underline;
-  text-underline-offset: 10px;
+  margin-left: 40px;
 }
 
 .welcome-bar {

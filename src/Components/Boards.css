@@ -72,3 +72,31 @@
 .right-preview img {
   flex: 1;
 }
+
+.board-toggle-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 0px 0 20px 140px; /* top right bottom left */
+}
+
+.board-toggle-buttons button {
+  color: #666;
+  letter-spacing: 0.03em;
+  border: none;
+  padding: 15px 10px;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.board-toggle-buttons button.active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  border: none;
+}
+
+.board-toggle-buttons button:not(.active):hover {
+  background-color: #f8dfe4;
+}

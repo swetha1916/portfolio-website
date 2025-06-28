@@ -13,7 +13,6 @@ function App() {
         </div>
 
         <h1>Swetha Anantha Krishnan</h1>
-        <p className="subtitle">Your boards</p>
       </header>
       
       <Boards />
