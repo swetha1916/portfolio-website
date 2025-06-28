@@ -1,6 +1,19 @@
+.board-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-title {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: bold;
+}
+
 .boards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(4, 240px);
   gap: 20px;
   padding: 20px 60px;
   margin-top: 250px;
@@ -9,8 +22,8 @@
 
 .board-card {
   border-radius: 16px;
-  padding: 40px 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 80px 120px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s ease;
