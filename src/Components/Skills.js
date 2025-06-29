@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Skills.css';
 import Masonry from 'react-masonry-css';
 
@@ -33,11 +33,11 @@ const techStack = [
   { name: 'Node.js', image: Nodejs, type: 'Programming' },
   { name: 'IBM Db2', image: IBMDB2, type: 'Databases' },
   { name: 'Git', image: Git, type: 'Version control' },
-  { name: 'Microsoft Powerpoint', image: Powerpoint, type: 'Tools' },
-  { name: 'Elm', image: Elm, type: 'Programming' },
+  { name: 'Latex', image: Latex, type: 'Tools' }, 
+  { name: 'Microsoft Powerpoint', image: Powerpoint, type: 'Tools' }, 
   { name: 'MySQL', image: MySQL, type: 'Databases' },
-  { name: 'Latex', image: Latex, type: 'Tools' },
   { name: 'Microsoft Excel', image: Excel, type: 'Tools' },
+  { name: 'Elm', image: Elm, type: 'Programming' }
   // add more
 ];
 
