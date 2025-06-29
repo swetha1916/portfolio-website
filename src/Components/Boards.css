@@ -114,3 +114,7 @@
 .board-toggle-buttons button:not(.active):hover {
   background-color: #f8dfe4;
 }
+
+.board-wrapper {
+  cursor: pointer;
+}
