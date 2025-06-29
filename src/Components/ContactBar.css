@@ -16,12 +16,31 @@
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
 }
 
+
 .contact-bar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
   color: #333;
-  font-size: 20px;
-  transition: color 0.2s ease;
+  text-decoration: none;
 }
 
 .contact-bar a:hover {
-  color: #ec8395; /* baby pink on hover */
+  background-color: #f8dfe4; /* light pink background */
+  color: #333; /* keep text/icon color consistent */
+}
+
+.contact-bar i {
+  font-size: 23px;
+}
+
+.contact-logo {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  border-radius: 50%;
 }
