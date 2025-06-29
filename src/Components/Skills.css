@@ -108,36 +108,40 @@
   border-radius: 10px;
 }
 
-.skills-options {
-  color: #666;
-  letter-spacing: 0.03em;
-  border: none;
-  padding: 20px 15px;
-  font-size: 15px;
+.skills-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-right: 70px;
+  margin-top: -40px;
+  margin-bottom: 30px;
+}
+
+.skills-icon-button {
   background-color: white;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.skills-options button {
-  color: #666;
-  letter-spacing: 0.03em;
   border: none;
-  padding: 18px 15px;
-  font-size: 15px;
-  background-color: white;
-  border-radius: 15px;
+  padding: 15px 15px;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #333;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #f7dee3;
 }
 
-.skills-options button.active {
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  border: none;
+.skills-icon-button:hover {
+  background-color: #f5afbd;
 }
 
-.skills-options button:not(.active):hover {
-  background-color: #f8dfe4;
+.skills-icon-button i {
+  font-size: 16px;
+}
+
+.tldr-button {
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }

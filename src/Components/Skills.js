@@ -59,9 +59,14 @@ const Skills = () => {
       <h2 className="skills-heading">Skills</h2>
       <p className="pins-text">{techStack.length} pins</p>
 
-      <div className="skills-options">
-        <button className="option-button">Sort by Type</button>
-        <button className="option-button">Summarize in Text</button>
+      <div className="skills-actions">
+        <button className="skills-icon-button" title="Sort by type">
+            <i className="fas fa-filter"></i>
+        </button>
+
+        <button className="skills-icon-button tldr-button" title="Summarize in text">
+            TL;DR
+        </button>
       </div>
 
       <Masonry
