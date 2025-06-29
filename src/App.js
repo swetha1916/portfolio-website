@@ -3,6 +3,7 @@ import './App.css';
 import Boards from './Components/Boards';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './Components/AboutMe';
+import Skills from './Components/Skills';
 import { useLocation } from 'react-router-dom';
 
 
@@ -27,6 +28,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Boards />} />
         <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/skills" element={<Skills />} />
         {/* Add more routes here */}
       </Routes>
     </div>
