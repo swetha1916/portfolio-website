@@ -3,15 +3,20 @@ import './Boards.css';
 import Violin from '../Assets/Violin.jpg';
 import Painting from '../Assets/Painting.jpg';
 import Travel from '../Assets/Travel.jpg';
-import Coding from '../Assets/Coding.jpg'
-import Code from '../Assets/Code.jpg'
-import Mac from '../Assets/Mac.jpg'
-import Python from '../Assets/Python.jpg'
-import SQL from '../Assets/SQL.jpg'
-import Html from '../Assets/Html.jpg'
-import Sisa from '../Assets/SISA.png'
-import StartCoding from '../Assets/StartCoding.jpg'
-import CSS from '../Assets/CSS.jpg'
+import Coding from '../Assets/Coding.jpg';
+import Code from '../Assets/Code.jpg';
+import Mac from '../Assets/Mac.jpg';
+import Python from '../Assets/Python.jpg';
+import SQL from '../Assets/SQL.jpg';
+import Html from '../Assets/Html.jpg';
+import Sisa from '../Assets/SISA.png';
+import StartCoding from '../Assets/StartCoding.jpg';
+import CSS from '../Assets/CSS.jpg';
+import PD from '../Assets/PDgame.png';
+import Type from '../Assets/Type.png';
+import Gmail from '../Assets/Gmail.jpg';
+import Linkedin from '../Assets/Linkedin.jpg';
+import GitHub from '../Assets/GitHub.jpg';
 
 
 const boards = [
@@ -20,16 +25,10 @@ const boards = [
   { title: 'Hobbies', pins: '1092', type: 'public', images: [ Violin, Painting, Travel ] },
   { title: 'Clubs and Roles', pins: '5', type: 'public', images: [ Sisa, CSS, StartCoding ] },
   { title: 'Projects', pins: '20', type: 'public', 
-    images: [ 'https://unsplash.it/400/400?image=1025',
-              'https://unsplash.it/200/200?image=1005',
-              'https://unsplash.it/200/200?image=1031'
-            ]
+    images: [ 'https://unsplash.it/400/400?image=1025', PD, Type ]
   },
   { title: 'My contact', pins: '10', type: 'private', 
-    images: [ 'https://unsplash.it/400/400?image=1025',
-              'https://unsplash.it/200/200?image=1005',
-              'https://unsplash.it/200/200?image=1031'
-            ]
+    images: [ Gmail, Linkedin, GitHub ]
   }
 ];
 
