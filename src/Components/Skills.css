@@ -15,6 +15,7 @@
     color: grey;
     font-size: 15px;
     margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 .skills-masonry-grid {
@@ -108,59 +109,7 @@
   border-radius: 10px;
 }
 
-.skills-actions {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 12px;
-  margin-right: 70px;
-  margin-top: -40px;
-  margin-bottom: 30px;
-}
-
-.skills-icon-button {
-  background-color: white;
-  border: none;
-  padding: 15px 15px;
-  border-radius: 12px;
-  font-size: 16px;
-  color: #333;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  background-color: #f7dee3;
-}
-
-.skills-icon-button:hover {
-  background-color: #f5afbd;
-}
-
-.skills-icon-button i {
-  font-size: 16px;
-}
-
-.tldr-button {
-  letter-spacing: 0.5px;
-}
-
-.skills-icon-button.active {
-  background-color: #e78aa2; /* darker pink for active */
-  font-weight: bold;
-}
-
-.skills-icon-button:not(.active):hover {
-  background-color: #f5afbd;
-}
-
-.skills-icon-button:disabled {
-  background-color: #ddd;
-  color: #aaa;
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
+/* The sub options for filter */
 .filter-dropdown {
   display: flex;
   flex-wrap: wrap;
@@ -168,7 +117,7 @@
   gap: 10px;
   margin-right: 50px; /* 10px from the right */
   margin-top: -10px; /* optional: adjusts vertical spacing */
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .filter-option {
@@ -189,4 +138,40 @@
 .filter-option.selected {
   background-color: #f093ac; /* darker pink when selected */
   color: white;
+}
+
+/* filter or tldr option */
+.skills-toggle-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 800px; 
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+.skills-toggle-buttons button {
+  color: #666;
+  letter-spacing: 0.03em;
+  border: none;
+  padding: 15px 15px;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.skills-toggle-buttons button.active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  border: none;
+  font-weight: 600;
+}
+
+.skills-toggle-buttons button:not(.active):hover {
+  background-color: #f8dfe4;
+}
+
+.skills-text {
+  margin-left: 20px;
 }

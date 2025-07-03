@@ -49,12 +49,11 @@ const breakpointColumnsObj = {
 };
 
 const Skills = () => {
-  const [isTldrActive, setIsTldrActive] = useState(false);
-  const [isFilterActive, setIsFilterActive] = useState(false);
-  const [selectedTypes, setSelectedTypes] = useState([]);
+  const availableTypes = Array.from(new Set(techStack.map((tech) => tech.type)));
 
-  const toggleTldr = () => setIsTldrActive(!isTldrActive);
-  const toggleFilter = () => setIsFilterActive(!isFilterActive);
+  const [isTldrActive, setIsTldrActive] = useState(false);
+  const [isFilterActive, setIsFilterActive] = useState(true); // Filter ON by default
+  const [selectedTypes, setSelectedTypes] = useState(availableTypes); // All types selected
   
   const handleTypeToggle = (type) => {
     setSelectedTypes((prev) =>
@@ -62,12 +61,9 @@ const Skills = () => {
     );
   };
 
-  const availableTypes = Array.from(new Set(techStack.map((tech) => tech.type)));
-
   const filteredTechStack = selectedTypes.length > 0
     ? techStack.filter((tech) => selectedTypes.includes(tech.type))
     : techStack;
-
 
   return (
     <div className="skills-page">
@@ -79,24 +75,28 @@ const Skills = () => {
       <h2 className="skills-heading">Skills</h2>
       <p className="pins-text">{techStack.length} pins</p>
 
-      <div className="skills-actions">
-        <button
-          className={`skills-icon-button ${isFilterActive ? 'active' : ''}`}
-          title={isTldrActive ? "Disable TL;DR to use filter" : "Sort by type"}
-          onClick={toggleFilter}
-          disabled={isTldrActive} // disables when TL;DR is active
-        >
-          Filter
-        </button>
+      <div className="skills-toggle-buttons">
+          <button
+            className={isFilterActive ? 'active' : ''}
+            onClick={() => {
+              setIsFilterActive(true);
+              setIsTldrActive(false); // disable TLDR
+              setSelectedTypes(availableTypes); // reset filters 
+            }}
+          >
+            Filter
+          </button>
 
-        <button
-          className={`skills-icon-button tldr-button ${isTldrActive ? 'active' : ''}`}
-          title={isFilterActive ? "Disable filter to view summary" : "Summarize in text"}
-          onClick={toggleTldr}
-          disabled={isFilterActive} // Disables when Filter is active
-        >
-          Text summary
-        </button>
+          <button
+            className={isTldrActive ? 'active' : ''}
+            onClick={() => {
+              setIsTldrActive(true);
+              setIsFilterActive(false); // disable Filter
+              setSelectedTypes([]); 
+            }}
+          >
+            Text Summary
+          </button>
       </div>
 
       {isFilterActive && (
@@ -115,7 +115,7 @@ const Skills = () => {
 
       {isTldrActive ? (
         <div className="skills-summary">
-          <p>
+          <p className="skills-text">
             Im proficient in everything.
           </p>
         </div>
