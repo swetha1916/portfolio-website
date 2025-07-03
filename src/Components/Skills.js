@@ -56,9 +56,15 @@ const Skills = () => {
   const [selectedTypes, setSelectedTypes] = useState(availableTypes); // All types selected
   
   const handleTypeToggle = (type) => {
-    setSelectedTypes((prev) =>
-      prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
-    );
+    setSelectedTypes((prev) => {
+      if (prev.includes(type)) {
+        // prevent deselecting the last remaining type
+        if (prev.length === 1) return prev;
+        return prev.filter((t) => t !== type);
+      } else {
+        return [...prev, type];
+      }
+    }); 
   };
 
   const filteredTechStack = selectedTypes.length > 0
