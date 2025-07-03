@@ -142,6 +142,51 @@
 }
 
 .tldr-button {
-  font-weight: bold;
   letter-spacing: 0.5px;
+}
+
+.skills-icon-button.active {
+  background-color: #e78aa2; /* darker pink for active */
+  font-weight: bold;
+}
+
+.skills-icon-button:not(.active):hover {
+  background-color: #f5afbd;
+}
+
+.skills-icon-button:disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.filter-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* aligns buttons to the right */
+  gap: 10px;
+  margin-right: 50px; /* 10px from the right */
+  margin-top: -10px; /* optional: adjusts vertical spacing */
+  margin-bottom: 20px;
+}
+
+.filter-option {
+  background-color: #f7dee3;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-option:hover {
+  background-color: #f5afbd;
+}
+
+.filter-option.selected {
+  background-color: #f093ac; /* darker pink when selected */
+  color: white;
 }

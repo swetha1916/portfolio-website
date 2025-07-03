@@ -49,6 +49,26 @@ const breakpointColumnsObj = {
 };
 
 const Skills = () => {
+  const [isTldrActive, setIsTldrActive] = useState(false);
+  const [isFilterActive, setIsFilterActive] = useState(false);
+  const [selectedTypes, setSelectedTypes] = useState([]);
+
+  const toggleTldr = () => setIsTldrActive(!isTldrActive);
+  const toggleFilter = () => setIsFilterActive(!isFilterActive);
+  
+  const handleTypeToggle = (type) => {
+    setSelectedTypes((prev) =>
+      prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
+    );
+  };
+
+  const availableTypes = Array.from(new Set(techStack.map((tech) => tech.type)));
+
+  const filteredTechStack = selectedTypes.length > 0
+    ? techStack.filter((tech) => selectedTypes.includes(tech.type))
+    : techStack;
+
+
   return (
     <div className="skills-page">
 
@@ -60,31 +80,62 @@ const Skills = () => {
       <p className="pins-text">{techStack.length} pins</p>
 
       <div className="skills-actions">
-        <button className="skills-icon-button" title="Sort by type">
-            <i className="fas fa-filter"></i>
+        <button
+          className={`skills-icon-button ${isFilterActive ? 'active' : ''}`}
+          title={isTldrActive ? "Disable TL;DR to use filter" : "Sort by type"}
+          onClick={toggleFilter}
+          disabled={isTldrActive} // disables when TL;DR is active
+        >
+          Filter
         </button>
 
-        <button className="skills-icon-button tldr-button" title="Summarize in text">
-            TL;DR
+        <button
+          className={`skills-icon-button tldr-button ${isTldrActive ? 'active' : ''}`}
+          title={isFilterActive ? "Disable filter to view summary" : "Summarize in text"}
+          onClick={toggleTldr}
+          disabled={isFilterActive} // Disables when Filter is active
+        >
+          Text summary
         </button>
       </div>
 
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className="skills-masonry-grid"
-        columnClassName="skills-masonry-column"
-      >
-        {techStack.map((tech, index) => (
-          <div className="skill-pin" key={index}>
-            <img src={tech.image} alt={tech.name} className="skill-image" />
-            <div className="skill-overlay">
+      {isFilterActive && (
+        <div className="filter-dropdown">
+          {availableTypes.map((type) => (
+            <button
+              key={type}
+              onClick={() => handleTypeToggle(type)}
+              className={`filter-option ${selectedTypes.includes(type) ? 'selected' : ''}`}
+            >
+              {type}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {isTldrActive ? (
+        <div className="skills-summary">
+          <p>
+            Im proficient in everything.
+          </p>
+        </div>
+      ) : (
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="skills-masonry-grid"
+          columnClassName="skills-masonry-column"
+        >
+          {filteredTechStack.map((tech, index) => (
+            <div className="skill-pin" key={index}>
+              <img src={tech.image} alt={tech.name} className="skill-image" />
+              <div className="skill-overlay">
                 <div className="pin-label name-label">{tech.name}</div>
                 <div className="pin-label type-label">{tech.type}</div>
+              </div>
             </div>
-          </div>
-        ))}
-      </Masonry>
-
+          ))}
+        </Masonry>
+      )}
     </div>
   );
 };
