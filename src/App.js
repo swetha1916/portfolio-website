@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
 import { useLocation } from 'react-router-dom';
+import TypingText from './Components/TypingText';
 
 
 function AppContent() {
@@ -19,7 +20,7 @@ function AppContent() {
           <div className="welcome-bar">
             Welcome to my Pinterest-inspired portfolio website!
           </div>
-          <h1>Swetha Anantha Krishnan</h1>
+          <TypingText text="Swetha Anantha Krishnan" speed={150} />
         </header>
       )}
 
