@@ -22,10 +22,11 @@ import GitHub from '../Assets/Home page/GitHub.jpg';
 
 const boards = [
   { title: 'About Me <3', path: 'about-me', pins: '39829', type: 'public', images: [ Mac, Coding, Code ] },
+  { title: 'Experience', path: 'experience', pins: '39829', type: 'public', images: [ Mac, Coding, Code ] }, 
   { title: 'Skills', path: 'skills', pins: '55', type: 'public', images: [ SQL, Python, Html ] },
-  { title: 'Hobbies', path: 'hobbies', pins: '1092', type: 'public', images: [ Violin, Painting, Travel ] },
-  { title: 'Clubs and Roles', path: 'clubs-and-roles', pins: '5', type: 'public', images: [ Sisa, CSS, StartCoding ] },
+  { title: 'Leadership experience', path: 'leadership-experience', pins: '5', type: 'public', images: [ Sisa, CSS, StartCoding ] },
   { title: 'Projects', path: 'projects', pins: '20', type: 'public', images: [ 'https://unsplash.it/400/400?image=1025', PD, Type ] },
+  { title: 'Hobbies', path: 'hobbies', pins: '1092', type: 'public', images: [ Violin, Painting, Travel ] },
   { title: 'My contact', path: 'my-contact', pins: '10', type: 'private', images: [ Gmail, Linkedin, GitHub ] }
   ];
 
