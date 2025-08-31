@@ -7,6 +7,7 @@ import Skills from './Components/Skills';
 import Hobbies from './Components/Hobbies';
 import Experience from './Components/Experience';
 import Leadership from './Components/Leadership';
+import Projects from './Components/Projects';
 import { useLocation } from 'react-router-dom';
 import TypingText from './Components/TypingText';
 
@@ -37,6 +38,7 @@ function AppContent() {
         <Route path="/hobbies" element={<Hobbies />} />
         <Route path="/leadership-experience" element={<Leadership />} />
         <Route path="/experience" element={<Experience />} />
+        <Route path="/projects" element={<Projects />}/>
         {/* Add more routes here */}
       </Routes>
     </div>
