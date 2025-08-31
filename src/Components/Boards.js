@@ -1,23 +1,23 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Boards.css';
-import Violin from '../Assets/Violin.jpg';
-import Painting from '../Assets/Painting.jpg';
-import Travel from '../Assets/Travel.jpg';
-import Coding from '../Assets/Coding.jpg';
-import Code from '../Assets/Code.jpg';
-import Mac from '../Assets/Mac.jpg';
-import Python from '../Assets/Python.jpg';
-import SQL from '../Assets/SQL.jpg';
-import Html from '../Assets/Html.jpg';
-import Sisa from '../Assets/SISA.png';
-import StartCoding from '../Assets/StartCoding.jpg';
-import CSS from '../Assets/CSS.jpg';
-import PD from '../Assets/PDgame.png';
-import Type from '../Assets/Type.png';
-import Gmail from '../Assets/Gmail.jpg';
-import Linkedin from '../Assets/Linkedin.jpg';
-import GitHub from '../Assets/GitHub.jpg';
+import Violin from '../Assets/Home page/Violin.jpg';
+import Painting from '../Assets/Home page/Painting.jpg';
+import Travel from '../Assets/Home page/Travel.jpg';
+import Coding from '../Assets/Home page/Coding.jpg';
+import Code from '../Assets/Home page/Code.jpg';
+import Mac from '../Assets/Home page/Mac.jpg';
+import Python from '../Assets/Home page/Python.jpg';
+import SQL from '../Assets/Home page/SQL.jpg';
+import Html from '../Assets/Home page/Html.jpg';
+import Sisa from '../Assets/Home page/SISA.png';
+import StartCoding from '../Assets/Home page/StartCoding.jpg';
+import CSS from '../Assets/Home page/CSS.jpg';
+import PD from '../Assets/Home page/PDgame.png';
+import Type from '../Assets/Home page/Type.png';
+import Gmail from '../Assets/Home page/Gmail.jpg';
+import Linkedin from '../Assets/Home page/Linkedin.jpg';
+import GitHub from '../Assets/Home page/GitHub.jpg';
 
 
 const boards = [

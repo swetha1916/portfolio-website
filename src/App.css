@@ -1,3 +1,11 @@
+.App {
+  background-image: url('./Assets/paperbg.webp');
+  background-repeat: repeat; /* or no-repeat if it's large enough */
+  background-size: cover;    /* or use `contain` or fixed size */
+  background-attachment: fixed; /* optional: gives parallax feel */
+  background-position: center;
+}
+
 .app-header {
   position: relative;
   top: 0;

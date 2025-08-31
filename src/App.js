@@ -20,6 +20,7 @@ function AppContent() {
           <div className="welcome-bar">
             Welcome to my Pinterest-inspired portfolio website!
           </div>
+
           <TypingText text="Swetha Anantha Krishnan" speed={150} />
         </header>
       )}
