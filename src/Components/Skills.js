@@ -3,7 +3,9 @@ import './Skills.css';
 import Masonry from 'react-masonry-css';
 
 import C from '../Assets/Skills board/C.jpg';
+import Cplusplus from '../Assets/Skills board/C++.jpg' 
 import CSS from '../Assets/Skills board/CSS.jpg';
+import Elm from '../Assets/Skills board/Elm.png';
 import Excel from '../Assets/Skills board/Excel.jpg';
 import Git from '../Assets/Skills board/Git.jpg';
 import Github from '../Assets/Skills board/Github.jpg';
@@ -18,26 +20,28 @@ import Powerpoint from '../Assets/Skills board/Powerpoint.jpg';
 import Python from '../Assets/Skills board/Python.jpg';
 import Reactjs from '../Assets/Skills board/React.jpg';
 import SQL from '../Assets/Skills board/SQL.jpg';
-import Elm from '../Assets/Skills board/Elm.png';
+import Word from '../Assets/Skills board/Word.jpg';
 
 const techStack = [
   { name: 'Python', image: Python, type: 'Programming' },
-  { name: 'JavaScript', image: Javascript, type: 'Front-end' },
-  { name: 'GitHub', image: Github, type: 'Version control' },
-  { name: 'CSS', image: CSS, type: 'Front-end' },
-  { name: 'React', image: Reactjs, type: 'Front-end' },
+  { name: 'JavaScript', image: Javascript, type: 'Programming' },
+  { name: 'GitHub', image: Github, type: 'Tools' },
+  { name: 'CSS', image: CSS, type: 'Programming' },
+  { name: 'React', image: Reactjs, type: 'Programming' },
   { name: 'C', image: C, type: 'Programming' },
-  { name: 'HTML', image: HTML, type: 'Front-end' },
+  { name: 'HTML', image: HTML, type: 'Programming' },
   { name: 'Java', image: Java, type: 'Programming' },
   { name: 'SQL', image: SQL, type: 'Databases' },
   { name: 'Node.js', image: Nodejs, type: 'Programming' },
   { name: 'IBM Db2', image: IBMDB2, type: 'Databases' },
-  { name: 'Git', image: Git, type: 'Version control' },
+  { name: 'Git', image: Git, type: 'Tools' },
   { name: 'Latex', image: Latex, type: 'Tools' }, 
   { name: 'Microsoft Powerpoint', image: Powerpoint, type: 'Tools' }, 
   { name: 'MySQL', image: MySQL, type: 'Databases' },
   { name: 'Microsoft Excel', image: Excel, type: 'Tools' },
-  { name: 'Elm', image: Elm, type: 'Programming' }
+  { name: 'Elm', image: Elm, type: 'Programming' },
+  { name: 'C++', image: Cplusplus, type: 'Programming'},
+  { name: 'Microsoft Word', image: Word, type: 'Tools'}
   // add more
 ];
 
