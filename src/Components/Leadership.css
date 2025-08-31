@@ -61,18 +61,23 @@
     text-align: center;
   }
   
-.name-label {
-    top: 10px;
-    left: 10px;
-    color: white;
-    background-color: #e1072b;
-    border-radius: 10px;
-  }
-
 .leader-pin:hover .leader-overlay {
     opacity: 1;
   }
-
+  
+.leader-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+  }
+  
+.leader-type {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #555;
+  }
+  
 .welcome-bar {
     background-color: #efefef;
     border-radius: 15px;
@@ -89,8 +94,85 @@
     font-size: 1rem;
     font-weight: bold;
   }
-
   
-.leader-text {
+.name-label {
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: transparent;
+  }
+  
+.type-label {
+    top: 10px;
+    right: 10px;
+    background-color: #e1072b; /* Pinterest red-pink */
+    color: white;
+    border-radius: 10px;
+  }
+  
+  /* The sub options for filter */
+.filter-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* aligns buttons to the right */
+    gap: 10px;
+    margin-right: 50px; /* 10px from the right */
+    margin-top: -10px; /* optional: adjusts vertical spacing */
+    margin-bottom: 30px;
+  }
+  
+.filter-option {
+    background-color: #f7dee3;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+.filter-option:hover {
+    background-color: #f5afbd;
+  }
+  
+.filter-option.selected {
+    background-color: #f093ac; /* darker pink when selected */
+    color: white;
+  }
+  
+  /* filter or tldr option */
+.leadership-toggle-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 800px; 
+    margin-top: -50px;
+    margin-bottom: 20px;
+  }
+  
+.leadership-toggle-buttons button {
+    color: #666;
+    letter-spacing: 0.03em;
+    border: none;
+    padding: 15px 15px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+.leadership-toggle-buttons button.active {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    border: none;
+    font-weight: 600;
+  }
+  
+.leadership-toggle-buttons button:not(.active):hover {
+    background-color: #f8dfe4;
+  }
+  
+.leadership-text {
     margin-left: 20px;
   }
