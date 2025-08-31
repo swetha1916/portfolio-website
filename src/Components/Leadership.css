@@ -1,9 +1,9 @@
-.experience-page {
+.leadership-page {
     padding: 10px 70px;
     margin-left: 30px;
   }
   
-.experience-heading {
+.leadership-heading {
     margin-top: 50px;
     font-size: 2.5rem;
     margin-left: 20px;
@@ -18,18 +18,18 @@
       margin-top: 0px;
   }
   
-.experience-masonry-grid {
+.leadership-masonry-grid {
     display: flex;
     margin-left: -20px; /* gutter size offset */
     width: auto;
   }
   
-.experience-masonry-column {
+.leadership-masonry-column {
     padding-left: 20px; /* gutter size */
     background-clip: padding-box;
   }
   
-.exp-pin {
+.leader-pin {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
@@ -38,14 +38,14 @@
     margin-bottom: 50px;
   }
   
-.exp-image {
+.leader-image {
     width: 100%;
     display: block;
     border-radius: 16px;
     border: 1px solid #b3b0b0;
   }
   
-.exp-overlay {
+.leader-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,18 +61,18 @@
     text-align: center;
   }
   
-.exp-pin:hover .exp-overlay {
+.leader-pin:hover .leader-overlay {
     opacity: 1;
   }
   
-.exp-name {
+.leader-name {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
     color: #333;
   }
   
-.exp-type {
+.leader-type {
     font-size: 0.9rem;
     margin-top: 5px;
     color: #555;
@@ -142,7 +142,7 @@
   }
   
   /* filter or tldr option */
-.experience-toggle-buttons {
+.leadership-toggle-buttons {
     display: flex;
     gap: 10px;
     margin-left: 800px; 
@@ -150,7 +150,7 @@
     margin-bottom: 20px;
   }
   
-.experience-toggle-buttons button {
+.leadership-toggle-buttons button {
     color: #666;
     letter-spacing: 0.03em;
     border: none;
@@ -162,17 +162,17 @@
     transition: all 0.2s ease;
   }
   
-.experience-toggle-buttons button.active {
+.leadership-toggle-buttons button.active {
     text-decoration: underline;
     text-underline-offset: 10px;
     border: none;
     font-weight: 600;
   }
   
-.experience-toggle-buttons button:not(.active):hover {
+.leadership-toggle-buttons button:not(.active):hover {
     background-color: #f8dfe4;
   }
   
-.experience-text {
+.leadership-text {
     margin-left: 20px;
   }

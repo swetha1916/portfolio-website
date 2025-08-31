@@ -18,12 +18,15 @@ import Type from '../Assets/Home page/Type.png';
 import Gmail from '../Assets/Home page/Gmail.jpg';
 import Linkedin from '../Assets/Home page/Linkedin.jpg';
 import GitHub from '../Assets/Home page/GitHub.jpg';
+import Saal from '../Assets/Home page/Saal.jpg';
+import MAHE from '../Assets/Home page/MAHE.jpg';
+import Prep from '../Assets/Home page/Prep101.png';
 
 
 const boards = [
   { title: 'About Me <3', path: 'about-me', pins: '39829', type: 'public', images: [ Mac, Coding, Code ] },
-  { title: 'Experience', path: 'experience', pins: '39829', type: 'public', images: [ Mac, Coding, Code ] }, 
   { title: 'Skills', path: 'skills', pins: '55', type: 'public', images: [ SQL, Python, Html ] },
+  { title: 'Experience', path: 'experience', pins: '39829', type: 'public', images: [ Prep, Saal, MAHE ] }, 
   { title: 'Leadership experience', path: 'leadership-experience', pins: '5', type: 'public', images: [ Sisa, CSS, StartCoding ] },
   { title: 'Projects', path: 'projects', pins: '20', type: 'public', images: [ 'https://unsplash.it/400/400?image=1025', PD, Type ] },
   { title: 'Hobbies', path: 'hobbies', pins: '1092', type: 'public', images: [ Violin, Painting, Travel ] },

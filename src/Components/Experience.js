@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Leadership.css';
+import './Experience.css';
 import Masonry from 'react-masonry-css';
 
 import Saal from '../Assets/Experience board/Saal.jpg';
