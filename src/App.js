@@ -4,6 +4,7 @@ import Boards from './Components/Boards';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
+import Hobbies from './Components/Hobbies';
 import { useLocation } from 'react-router-dom';
 import TypingText from './Components/TypingText';
 
@@ -31,6 +32,7 @@ function AppContent() {
         <Route path="/" element={<Boards />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/hobbies" element={<Hobbies />} />
         {/* Add more routes here */}
       </Routes>
     </div>
