@@ -126,14 +126,14 @@ const Skills = () => {
       {isTldrActive ? (
         <div className="skills-summary">
           <p className="skills-text">
-          <b>Programming Languages:</b> <br/> 
-          Python, Java, C, C++, Elm, ARM Assembly, JavaScript, HTML, CSS <br/> <br/> 
-          <b>Frameworks & Libraries:</b> <br/>  
-          React.js, Node.js, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, Hugging Face <br/> <br/> 
-          <b>Databases:</b> <br/>  
-          SQL, MySQL, IBM Db2 <br/> <br/> 
-          <b>Tools & Platforms:</b> <br/>   
-          Git, GitHub, LaTeX, Microsoft Office (Word, Excel, PowerPoint) <br/> <br/> 
+            <b>Programming Languages:</b> <br/> 
+            Python, Java, C, C++, Elm, ARM Assembly, JavaScript, HTML, CSS <br/> <br/> 
+            <b>Frameworks & Libraries:</b> <br/>  
+            React.js, Node.js, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, Hugging Face <br/> <br/> 
+            <b>Databases:</b> <br/>  
+            SQL, MySQL, IBM Db2 <br/> <br/> 
+            <b>Tools & Platforms:</b> <br/>   
+            Git, GitHub, LaTeX, Microsoft Office (Word, Excel, PowerPoint) <br/> <br/> 
           </p>
         </div>
       ) : (
