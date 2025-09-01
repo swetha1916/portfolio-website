@@ -1,7 +1,7 @@
 import ContactBar from './Components/ContactBar';
 import './App.css';
 import Boards from './Components/Boards';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
 import Hobbies from './Components/Hobbies';
@@ -15,7 +15,7 @@ import TypingText from './Components/TypingText';
 
 function AppContent() {
   const location = useLocation();
-  const isHome = location.pathname === '/';
+  const isHome = location.pathname === '/' || location.hash === '#/' || location.hash === '';
 
   return (
     <div className="App">

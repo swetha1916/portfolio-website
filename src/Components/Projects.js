@@ -63,7 +63,7 @@ const Projects = () => {
         <div className="projects-summary">
           <p className="projects-text">
             <b>Pinterest-themed Personal Portfolio Website </b> <br/> 
-            <i>Link</i> <br/>
+            <i>Link: https://swetha1916.github.io/portfolio-website/#/</i> <br/>
             • Designed and built a responsive, Pinterest-style personal portfolio using React, CSS, and JavaScript.<br/>
             • Showcases sections about me, skills, experience, projects, leadership experience, hobbies, achievements with a clean UI/UX and interactive design.<br/>
             <br/> <br/> 
