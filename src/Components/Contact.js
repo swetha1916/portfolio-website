@@ -9,7 +9,7 @@ import GitHub from '../Assets/Home page/GitHub.jpg';
 const contactStack = [
     { name: 'swetha.ananthak@gmail.com', image: Gmail, type: "Gmail" },
     { name: 'swetha-a-krishnan', image: Linkedin, type: "Linkedin" },
-    { name: 'swetha_1916', image: GitHub, type: "GitHub" }
+    { name: 'swetha1916', image: GitHub, type: "GitHub" }
   // add more
 ];
 
@@ -69,7 +69,7 @@ const Contact = () => {
             <br/> <br/> 
 
             <b>GitHub:</b> <br/> 
-            swetha_1916
+            swetha1916
             <br/> <br/> 
 
             Feel free to contact me! 
