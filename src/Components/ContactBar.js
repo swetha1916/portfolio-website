@@ -7,7 +7,7 @@ const ContactBar = () => {
     // to associate each icon with a link 
     <div className="contact-bar">
 
-      <a href="/" title="Home">
+      <a href="#/" title="Home">
         <img src={Slogo} alt="Logo" className="contact-logo" />
       </a>
 
