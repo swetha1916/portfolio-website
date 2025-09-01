@@ -15,7 +15,7 @@ import TypingText from './Components/TypingText';
 
 function AppContent() {
   const location = useLocation();
-  const isHome = location.pathname === '/' || location.hash === '#/' || location.hash === '';
+  const isHome = location.pathname === '/' && (location.hash === '' || location.hash === '#/');
 
   return (
     <div className="App">
