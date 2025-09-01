@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Boards.css';
 import Violin from '../Assets/Home page/Violin.jpg';
+import Portfolio from '../Assets/Home page/Portfolio.jpeg';
 import Painting from '../Assets/Home page/Painting.jpg';
 import Travel from '../Assets/Home page/Travel.jpg';
 import Coding from '../Assets/Home page/Coding.jpg';
@@ -28,7 +29,7 @@ const boards = [
   { title: 'Skills', path: 'skills', pins: '55', type: 'public', images: [ SQL, Python, Html ] },
   { title: 'Experience', path: 'experience', pins: '39829', type: 'public', images: [ Prep, Saal, MAHE ] }, 
   { title: 'Leadership experience', path: 'leadership-experience', pins: '5', type: 'public', images: [ Sisa, CSS, StartCoding ] },
-  { title: 'Projects', path: 'projects', pins: '20', type: 'public', images: [ 'https://unsplash.it/400/400?image=1025', PD, Type ] },
+  { title: 'Projects', path: 'projects', pins: '20', type: 'public', images: [ Portfolio, PD, Type ] },
   { title: 'Hobbies', path: 'hobbies', pins: '1092', type: 'public', images: [ Violin, Painting, Travel ] },
   { title: 'My contact', path: 'my-contact', pins: '10', type: 'private', images: [ Gmail, Linkedin, GitHub ] }
   ];
